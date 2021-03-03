@@ -67,7 +67,7 @@ let microApp = micro({name: 'MicroMain', env: 'main_development'})
 
 在上面的代码中，通过调用micro构造函数，创建了一个名称为 `MicroMain` 的主应用，同时指定了当前程序
 的执行环境为主应用开发环境，在此环境下，主应用默认将从子应用配置的remote entry加载资源。关于`env`
-参数的其他可选值及对子应用加载方式的影响请查看[api文档](https://github.com/micro-frontends-lab/micro-core/blob/master/doc/api.md)。
+参数的其他可选值及对子应用加载方式的影响请查看[api文档](https://github.com/micro-frontends-lab/micro-core/blob/main/doc/api.md)。
 
 ### 主应用注册子应用
 
@@ -290,7 +290,7 @@ microApp.register().start()
 
 5. 主应用如何暴漏出可共享的框架、类库供子应用使用？
 
-  通过调用 `share` 方法（详见[api文档](https://github.com/micro-frontends-lab/micro-core/blob/master/doc/api.md))，
+  通过调用 `share` 方法（详见[api文档](https://github.com/micro-frontends-lab/micro-core/blob/main/doc/api.md))，
   主应用可暴漏出需共享的内容到 `window` 对象下，需要使用的子应用可以在打包的时候配置 `externals`,
   或直接引用主应用暴漏到 `window` 下的顶级全局变量。
 
@@ -300,4 +300,4 @@ microApp.register().start()
 
 ## 更多内容
 
-更多内容请参考 [`doc/api.md` 文档](https://github.com/micro-frontends-lab/micro-core/blob/master/doc/api.md)。
+更多内容请参考 [`doc/api.md` 文档](https://github.com/micro-frontends-lab/micro-core/blob/main/doc/api.md)。
